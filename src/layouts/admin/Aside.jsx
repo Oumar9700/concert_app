@@ -19,26 +19,23 @@ export default function Aside() {
         </div>
       </div>
 
-      <div className="form-inline">
-        <div className="input-group" data-widget="sidebar-search">
-          <input className="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search"/>
-          <div className="input-group-append">
-            <button className="btn btn-sidebar">
-              <i className="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
       <nav className="mt-2">
         <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           {/* <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library --> */}
+          <li className="nav-item">
+            <a href="pages/widgets.html" className="nav-link">
+              <i className="nav-icon fas fa-th"></i>
+              <p>
+                Tableau de bord
+              </p>
+            </a>
+          </li>
           <li className="nav-item menu-open">
             <a href="#" className="nav-link active">
               <i className="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                Evenements
                 <i className="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -46,31 +43,11 @@ export default function Aside() {
               <li className="nav-item">
                 <a href="./index.html" className="nav-link active">
                   <i className="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Liste </p>
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="./index2.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="./index3.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
+              
             </ul>
-          </li>
-          <li className="nav-item">
-            <a href="pages/widgets.html" className="nav-link">
-              <i className="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span className="right badge badge-danger">New</span>
-              </p>
-            </a>
           </li>
           
         </ul>

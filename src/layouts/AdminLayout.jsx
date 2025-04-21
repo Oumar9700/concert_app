@@ -2,6 +2,7 @@ import AssetsLoader from './AssetsLoader';
 import Header from './admin/Header';
 import Aside from './admin/Aside';
 import Footer from './admin/Footer';
+import { Outlet } from 'react-router-dom';
 
 const AdminLayout = ({ children }) => {
   return (
@@ -87,6 +88,7 @@ const AdminLayout = ({ children }) => {
           <Header />
           <Aside />
           {/* <Dashboard /> */}
+          <Outlet />
           <Footer />
       </>
 
