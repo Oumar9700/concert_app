@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "admin-lte": "^4.0.0-beta3",
-    "bootstrap": "^5.3.5",
     "jquery": "^3.7.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
