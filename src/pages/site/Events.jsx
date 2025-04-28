@@ -8,7 +8,7 @@ export default function Events(){
           <div className="row">
             <div className="col-12 text-center">
               <div className="title">
-                <h3>Event Schedule</h3>
+                <h3>Event Schedulee</h3>
               </div>
               <ol className="breadcrumb p-0 m-0">
                 <li className="breadcrumb-item"><a href="index.html">Home</a></li>
