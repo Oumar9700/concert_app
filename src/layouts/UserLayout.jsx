@@ -69,7 +69,7 @@ const UserLayout = ({ children }) => {
                 
                 
                 <li className="nav-item">
-                  <a className="nav-link" href="/">S'inscrire</a>
+                  <a className="nav-link" href="/register">S'inscrire</a>
                 </li>
               </ul>
               <a href="login" className="ticket">

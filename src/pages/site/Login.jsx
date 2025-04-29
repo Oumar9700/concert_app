@@ -1,4 +1,13 @@
+import { useState } from "react";
+import { useAuth } from "../../hooks/AuthProvider";
+
 export default function Login(){
+
+  const [input, setInput] = useState({
+          username: "",
+          password: "",
+        });
+
 
     return (
         <>

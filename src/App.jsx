@@ -11,34 +11,42 @@ import Home from './pages/site/Home';
 import Events from './pages/site/Events';
 import Contact from './pages/site/Contact';
 import Login from './pages/site/Login';
+import Register from './pages/site/Register';
+import AuthProvider from './hooks/AuthProvider';
 
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        
 
-         {/* Routes pour les users */}
-         {/* <Route path="/" element={<UserLayout />}>
-          <Route index element={<h1>User home page</h1>} />
-        </Route> */}
+      <AuthProvider>
 
-        <Route path='/'  element={<UserLayout />}>
-          <Route index element={<Home />} />
-          <Route path='events' element={<Events />} />
-          <Route path='contacts' element={<Contact />} />
-          <Route path='login' element={<Login />} />
-        </Route>
+        <Routes>
+          
 
-        {/* Routes pour les admins */}
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route index element={<AdminDashboard />} />
-        </Route>
-        
-        
-        
+          {/* Routes pour les users */}
+          {/* <Route path="/" element={<UserLayout />}>
+            <Route index element={<h1>User home page</h1>} />
+          </Route> */}
+
+          <Route path='/'  element={<UserLayout />}>
+            <Route index element={<Home />} />
+            <Route path='events' element={<Events />} />
+            <Route path='contacts' element={<Contact />} />
+            <Route path='login' element={<Login />} />
+            <Route path='register' element={<Register />} />
+          </Route>
+
+          {/* Routes pour les admins */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<AdminDashboard />} />
+          </Route>
+          
+          
+          
         </Routes>
+        
+      </AuthProvider>
     </BrowserRouter>
   );
 }

@@ -47,7 +47,7 @@ p, a, li, blockquote, label {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #b3b3b3;
+  color: #000000;
   font-size: 0.9375rem;
 }
 
@@ -370,12 +370,12 @@ button:hover {
 
 .form-control.main {
   background: transparent;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #000000;
   border-radius: 0;
   font-size: 0.9375rem;
   padding: 15px 20px;
   margin-bottom: 20px;
-  color: #b3b3b3;
+  color: #000000;
 }
 
 .form-control.main:focus {
@@ -1873,7 +1873,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .registration .registration-block .block .title p {
-  color: #b3b3b3;
+  color: #000000;
   line-height: 1;
 }
 
