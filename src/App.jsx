@@ -10,7 +10,7 @@ import UserLayout from './layouts/UserLayout';
 import Home from './pages/site/Home';
 import Events from './pages/site/Events';
 import Contact from './pages/site/Contact';
-import Login from './pages/site/de';
+import Login from './pages/site/Login';
 import Register from './pages/site/Register';
 import AuthProvider from './hooks/AuthProvider';
 
