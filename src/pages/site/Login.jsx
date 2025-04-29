@@ -17,7 +17,7 @@ export default function Register(){
     console.log(input);
 
     e.preventDefault();
-    if (input.email !== "" && input.password !== "" && input.password == input.confirm_password) {
+    if (input.email !== "" && input.password !== "" ) {
           auth.loginAction(input);
         return;
     }
@@ -60,7 +60,7 @@ export default function Register(){
       <section className="section contact-form">
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-6 mx-auto">
               <div className="section-title">
                 <h3>Conne<span className="alternate">xion</span></h3>
                 <p>Remplissez le formulaire pour vous connecter</p>
@@ -68,162 +68,80 @@ export default function Register(){
             </div>
           </div>
 
-          {/* {input} */}
+          <div className="row">
 
-          {
-                    auth.errorLogin ? (
-                        <div className="alert alert-danger alert-dismissible">
-                            <button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <h5><i className="icon fas fa-ban"></i> Erreur !</h5>
-                            {auth.errorLogin}
-                        </div>
-                    ) : null
-                }
-          {
-                    auth.successLogin ? (
-                        <div className="alert alert-danger alert-dismissible">
-                            <button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <h5><i className="icon fas fa-ban"></i> Success !</h5>
-                            {auth.successLogin}
-                        </div>
-                    ) : null
-                }
+            <div className="col-6 mx-auto">
 
-          {/* <div>
-            <h2>Valeurs sélectionnés</h2>
-            <pre>{JSON.stringify(input, null, 2)}</pre>
-          </div> */}
+              {/* {input} */}
 
-          <form onSubmit={handleSubmitEvent} className="row">
-            <div className="col-md-6">
-              <input 
-                className="form-control main" 
-                type="text"
-                id="firstname"
-                name="firstname"
-                placeholder="Prénom"
-                aria-describedby="firstname"
-                aria-invalid="false"
-                onChange={handleInput}
-                required
-              />
-            </div>
-            <div className="col-md-6">
-              <input
-                className="form-control main" 
-                type="text"
-                id="lastname"
-                name="lastname"
-                placeholder="Nom"
-                aria-describedby="lastname"
-                aria-invalid="false"
-                onChange={handleInput} required/>
-            </div>
-            <div className="col-md-6">
-              <input 
-                className="form-control main" 
-                type="email"
-                id="email"
-                name="email"
-                placeholder="email"
-                aria-describedby="email"
-                aria-invalid="false"
-                onChange={handleInput} required
-              />
-            </div>
+              {
+                        auth.errorLogin ? (
+                            <div className="alert alert-danger alert-dismissible">
+                                <button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h5><i className="icon fas fa-ban"></i> Erreur !</h5>
+                                {auth.errorLogin}
+                            </div>
+                        ) : null
+                    }
+              {
+                        auth.successLogin ? (
+                            <div className="alert alert-success alert-dismissible">
+                                <button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h5><i className="icon fas fa-ban"></i> Success !</h5>
+                                {auth.successLogin}
+                            </div>
+                        ) : null
+                    }
 
-            <div className="col-md-6">
-              <input 
-                className="form-control main" 
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="Téléphone"
-                aria-describedby="phone"
-                aria-invalid="false"
-                onChange={handleInput} required
-              />
-            </div>
+              {/* <div>
+                <h2>Valeurs sélectionnés</h2>
+                <pre>{JSON.stringify(input, null, 2)}</pre>
+              </div> */}
 
-            <div className="col-md-6">
-              
-              <select 
-                style={{padding: "0px", height: "62%"}}
-                name="gender"
-                placeholder="Sexe" 
-                className="form-control main"  
-                onChange={handleInput}>
-
-                  <option key={GENDER.MALE} value={GENDER.MALE}>
-                    {GENDER.MALE}
-                  </option>
-                  <option key={GENDER.FEMALE} value={GENDER.FEMALE}>
-                    {GENDER.FEMALE}
-                  </option>
-                  <option key={GENDER.UNKNOWN} value={GENDER.UNKNOWN}>
-                    {GENDER.UNKNOWN}
-                  </option>
+              <form onSubmit={handleSubmitEvent} className="row">
                 
-              </select>
-            </div>
+                <div className="col-md-12">
+                  <input 
+                    className="form-control main" 
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email"
+                    aria-describedby="email"
+                    aria-invalid="false"
+                    onChange={handleInput} required
+                  />
+                </div>
 
+                <div className="col-md-12">
+                  <input 
+                    className="form-control main" 
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="password"
+                    aria-describedby="password"
+                    aria-invalid="password"
+                    onChange={handleInput} required
+                  />
+                </div>
 
-            <div className="col-md-6">
-              <input 
-                className="form-control main" 
-                type="password"
-                id="password"
-                name="password"
-                placeholder="password"
-                aria-describedby="password"
-                aria-invalid="password"
-                onChange={handleInput} required
-              />
-            </div>
-
-            <div className="col-md-6">
-              <input 
-                className="form-control main" 
-                type="password"
-                id="confirm_password"
-                name="confirm_password"
-                placeholder="confirm_password"
-                aria-describedby="confirm_password"
-                aria-invalid="confirm_password"
-                onChange={handleInput} required
-              />
-            </div>
-
-            <div className="col-md-6">
-              
-              <select 
-                style={{padding: "0px", height: "62%"}}
-                name="role"
-                placeholder="Role" 
-                className="form-control main"  
-                onChange={handleInput}>
-
-                  <option key={ROLES.CLIENT} value={ROLES.CLIENT}>
-                    {ROLES.CLIENT}
-                  </option>
-                  <option key={ROLES.ORGANIZER} value={ROLES.ORGANIZER}>
-                    {ROLES.ORGANIZER}
-                  </option>
                 
-              </select>
-            </div>
-            
-            <div className="col-12 text-center">
-              <button type="submit" className="btn btn-main-md">S'inscrire</button>
+
+                
+                
+                <div className="col-12 text-center">
+                  <button type="submit" className="btn btn-main-md">Connexion</button>
+                </div>
+
+              </form>
             </div>
 
-          </form>
+          </div>
+
         </div>
       </section>
 
-{/*================================
-=            Google Map            =
-================================= */}
 
       <section className="map">
         {/* Google Map  */}

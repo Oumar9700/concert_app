@@ -77,23 +77,32 @@ const AuthProvider = ({ children }) => {
       const res = await response.json();
       
       if (res.data) {
-        console.log(res.data.user);
+
+        console.log("user logged data :");
+        console.log(res.data);
 
         
 
-        setUser(  res.data.user);
+        setUser(  res.data);
         console.log("dddd : user : ")
         console.log(user)
-        setToken(res.data.token);
-        setRefreshToken(res.data.refreshToken);
-        localStorage.setItem("token", res.data.token);
-        localStorage.setItem("refreshToken", res.data.refreshToken);
+        setToken(res.data.id);
+        setRefreshToken(res.data.id);
+        localStorage.setItem("token", res.data.id);
+        localStorage.setItem("refreshToken", res.data.id);
 
         console.log("localStorage", localStorage.getItem("token"));
         console.log("navigating to dashboard");
 
         setErrorLogin(null);
-        navigate("/dashboard");
+
+        if(user.role == "client"){
+          navigate("/dashboard");
+        }else if(user.role == "admin"){
+          navigate("/dashboard");
+        }else if(user.role == "organizer"){
+          navigate("/dashboard");
+        }
         return;
       }
       setErrorLogin(res.error);
