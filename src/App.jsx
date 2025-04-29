@@ -10,7 +10,7 @@ import UserLayout from './layouts/UserLayout';
 import Home from './pages/site/Home';
 import Events from './pages/site/Events';
 import Contact from './pages/site/Contact';
-import Login from './pages/site/Login';
+import Login from './pages/site/de';
 import Register from './pages/site/Register';
 import AuthProvider from './hooks/AuthProvider';
 
@@ -41,8 +41,6 @@ export default function App() {
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<AdminDashboard />} />
           </Route>
-          
-          
           
         </Routes>
         

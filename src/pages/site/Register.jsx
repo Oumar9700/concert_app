@@ -100,10 +100,10 @@ export default function Register(){
                     ) : null
                 }
 
-          <div>
-      <h2>Valeurs sélectionnés</h2>
-      <pre>{JSON.stringify(input, null, 2)}</pre>
-    </div>
+          {/* <div>
+            <h2>Valeurs sélectionnés</h2>
+            <pre>{JSON.stringify(input, null, 2)}</pre>
+          </div> */}
 
           <form onSubmit={handleSubmitEvent} className="row">
             <div className="col-md-6">
