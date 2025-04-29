@@ -8,11 +8,11 @@ export default function Events(){
           <div className="row">
             <div className="col-12 text-center">
               <div className="title">
-                <h3>Event Schedulee</h3>
+                <h3>Concerts avenir</h3>
               </div>
               <ol className="breadcrumb p-0 m-0">
                 <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li className="breadcrumb-item active">Event Schedule</li>
+                <li className="breadcrumb-item active">Evenements</li>
               </ol>
             </div>
           </div>
@@ -25,8 +25,8 @@ export default function Events(){
           <div className="row">
             <div className="col-12">
               <div className="section-title">
-                <h3>Event <span className="alternate">Schedule</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+                <h3>Concerts <span className="alternate">à venir</span></h3>
+                <p>Des concerts dans toute la France, des artistes locaux aux stars internationales</p>
               </div>
             </div>
           </div>
@@ -37,19 +37,19 @@ export default function Events(){
                   <li className="nav-item">
                     <a className="nav-link active" href="#nov20" data-toggle="pill">
                       Day-01
-                      <span>20 November 2017</span>
+                      <span>14 Juin 2025, Paris</span>
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#nov21" data-toggle="pill">
                     Day-02
-                      <span>21 November 2017</span>
+                      <span>21 Juin 2025, Marseille</span>
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#nov22" data-toggle="pill">
                     Day-03
-                      <span>22 November 2017</span>
+                      <span>27 Juin 2025, Lyon</span>
                     </a>
                   </li>
                 </ul>
@@ -60,10 +60,10 @@ export default function Events(){
                     {/* Headings */}
                     <ul className="m-0 p-0">
                       <li className="headings">
-                        <div className="time">Time</div>
-                        <div className="speaker">Speaker</div>
-                        <div className="subject">Subject</div>
-                        <div className="venue">Venue</div>
+                        <div className="time">Temps</div>
+                        <div className="speaker">Artiste</div>
+                        <div className="subject">Sujet</div>
+                        <div className="venue">Salle</div>
                       </li>
                       {/* Schedule Details */}
                       <li className="schedule-details">
@@ -76,12 +76,12 @@ export default function Events(){
                           {/* Speaker */}
                           <div className="speaker">
                             <img src="templates/event/images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one"/>
-                          <span className="name">Samanta Doe</span>
+                          <span className="name">Yemi Alade</span>
                           </div>
                           {/* Subject */}
                           <div className="subject">Introduction to Wp</div>
                           {/* Venue */}
-                          <div className="venue">Auditorium A</div>
+                          <div className="venue">Stade Charléty</div>
                         </div>
                       </li>
                       {/* Schedule Details */}
@@ -95,12 +95,12 @@ export default function Events(){
                           {/* Speaker */}
                           <div className="speaker">
                             <img src="templates/event/images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two"/>
-                          <span className="name">Zerad Pawel</span>
+                          <span className="name">Burna Boy</span>
                           </div>
                           {/* Subject */}
                           <div className="subject">Principle of Wp</div>
                           {/* Venue */}
-                          <div className="venue">Auditorium B</div>
+                          <div className="venue"> Le Dôme</div>
                         </div>
                       </li>
                       {/* Schedule Details */}
@@ -114,12 +114,12 @@ export default function Events(){
                           {/* Speaker */}
                           <div className="speaker">
                             <img src="templates/event/images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three"/>
-                          <span className="name">Henry Mong</span>
+                          <span className="name">Tayc</span>
                           </div>
                           {/* Subject */}
                           <div className="subject">Wp Requirements</div>
                           {/* Venue */}
-                          <div className="venue">Auditorium C</div>
+                          <div className="venue">Halle Tony Garnier C</div>
                         </div>
                       </li>
                       {/* Schedule Details */}
@@ -130,315 +130,18 @@ export default function Events(){
                             <i className="fa fa-clock-o"></i>
                             <span className="time">2.00 PM</span>
                           </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four"/>
-                          <span className="name">Baily Leo</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium D</div>
+                          
                         </div>
                       </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
+                    
                     </ul>
-                  </div>
-                  <div className="tab-pane fade schedule-item" id="nov21">
-                    {/* Headings */}
-                    <ul className="m-0 p-0">
-                      <li className="headings">
-                        <div className="time">Time</div>
-                        <div className="speaker">Speaker</div>
-                        <div className="subject">Subject</div>
-                        <div className="venue">Venue</div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">9.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one"/>
-                          <span className="name">Samanta Doe</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium A</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">10.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two"/>
-                          <span className="name">Zerad Pawel</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Principle of Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium B</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">12.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three"/>
-                          <span className="name">Henry Mong</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Wp Requirements</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium C</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">2.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four"/>
-                          <span className="name">Baily Leo</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium D</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="tab-pane fade schedule-item" id="nov22">
-                    {/* Headings */}
-                    <ul className="m-0 p-0">
-                      <li className="headings">
-                        <div className="time">Time</div>
-                        <div className="speaker">Speaker</div>
-                        <div className="subject">Subject</div>
-                        <div className="venue">Venue</div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">9.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one"/>
-                          <span className="name">Samanta Doe</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium A</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">10.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two"/>
-                          <span className="name">Zerad Pawel</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Principle of Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium B</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">12.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three"/>
-                          <span className="name">Henry Mong</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Wp Requirements</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium C</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">2.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four"/>
-                          <span className="name">Baily Leo</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium D</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                  </div>                
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </section>
- 
 
         </>
     );

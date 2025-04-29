@@ -3,19 +3,19 @@ export default function Home(){
     return (
         <>
 
-    <section className="banner bg-banner-one overlay">
+      <section className="banner bg-banner-one overlay">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               {/* Content Block */}
               <div className="block">
-                {/* Coundown Timer */}
+                {/* Countdown Timer */}
                 <div className="timer"></div>
-                <h1>Business</h1>
-                <h2>Conference 2017</h2>
-                <h6>02-05 July 2017 California</h6>
-                {/*  Action Button */} 
-                <a href="#" className="btn btn-white-md">get ticket now</a>
+                <h1>Réservez vos billets</h1>
+                <h2>Pour les meilleurs concerts de l'année</h2>
+                <h6>Juin - Septembre 2025 • Partout en France</h6>
+                {/* Action Button */} 
+                <a href="#" className="btn btn-white-md">Acheter un billet</a>
               </div>
             </div>
           </div>
@@ -27,26 +27,28 @@ export default function Home(){
           <div className="row">
             <div className="col-lg-4 col-md-6 align-self-center">
               <div className="image-block bg-about">
-                <img className="img-fluid" src="templates/event/images/speakers/featured-speaker.jpg" alt=""/>
+                <img className="img-fluid" src="templates/event/images/speakers/featured-speaker.jpg" alt="Concert Highlight" />
               </div>
             </div>
             <div className="col-lg-8 col-md-6 align-self-center">
               <div className="content-block">
-                <h2>About The <span className="alternate">Eventre</span></h2>
+                <h2>À propos de <span className="alternate">EvenTre</span></h2>
                 <div className="description-one">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco.
+                    EvenTre est votre plateforme de référence pour acheter des billets de concerts en ligne. Grâce à une interface simple et rapide, trouvez vos artistes préférés et réservez votre place en quelques clics.
                   </p>
                 </div>
                 <div className="description-two">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt ut labore et dolore magna aliq enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                  <p>
+                    Des concerts dans toute la France, des artistes locaux aux stars internationales, vivez l'expérience musicale comme jamais auparavant. Restez informé des événements à venir et profitez de billets à prix avantageux !
+                  </p>
                 </div>
                 <ul className="list-inline">
                   <li className="list-inline-item">
-                    <a href="#" className="btn btn-main-md">Buy ticket</a>
+                    <a href="#" className="btn btn-main-md">Acheter un billet</a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#" className="btn btn-transparent-md">Read more</a>
+                    <a href="#" className="btn btn-transparent-md">En savoir plus</a>
                   </li>
                 </ul>
               </div>
@@ -54,15 +56,14 @@ export default function Home(){
           </div>
         </div>
       </section>
-
         
       <section className="section schedule">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="section-title">
-                <h3>Event <span className="alternate">Schedule</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+                <h3>Concerts <span className="alternate">à venir</span></h3>
+                <p>Des concerts dans toute la France, des artistes locaux aux stars internationales</p>
               </div>
             </div>
           </div>
@@ -73,19 +74,19 @@ export default function Home(){
                   <li className="nav-item">
                     <a className="nav-link active" href="#nov20" data-toggle="pill">
                       Day-01
-                      <span>20 November 2017</span>
+                      <span>14 Juin 2025, Paris</span>
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#nov21" data-toggle="pill">
                     Day-02
-                      <span>21 November 2017</span>
+                      <span>21 Juin 2025, Marseille</span>
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#nov22" data-toggle="pill">
                     Day-03
-                      <span>22 November 2017</span>
+                      <span>27 Juin 2025, Lyon</span>
                     </a>
                   </li>
                 </ul>
@@ -96,10 +97,10 @@ export default function Home(){
                     {/* Headings */}
                     <ul className="m-0 p-0">
                       <li className="headings">
-                        <div className="time">Time</div>
-                        <div className="speaker">Speaker</div>
-                        <div className="subject">Subject</div>
-                        <div className="venue">Venue</div>
+                        <div className="time">Temps</div>
+                        <div className="speaker">Artiste</div>
+                        <div className="subject">Sujet</div>
+                        <div className="venue">Salle</div>
                       </li>
                       {/* Schedule Details */}
                       <li className="schedule-details">
@@ -112,12 +113,12 @@ export default function Home(){
                           {/* Speaker */}
                           <div className="speaker">
                             <img src="templates/event/images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one"/>
-                          <span className="name">Samanta Doe</span>
+                          <span className="name">Yemi Alade</span>
                           </div>
                           {/* Subject */}
                           <div className="subject">Introduction to Wp</div>
                           {/* Venue */}
-                          <div className="venue">Auditorium A</div>
+                          <div className="venue">Stade Charléty</div>
                         </div>
                       </li>
                       {/* Schedule Details */}
@@ -131,12 +132,12 @@ export default function Home(){
                           {/* Speaker */}
                           <div className="speaker">
                             <img src="templates/event/images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two"/>
-                          <span className="name">Zerad Pawel</span>
+                          <span className="name">Burna Boy</span>
                           </div>
                           {/* Subject */}
                           <div className="subject">Principle of Wp</div>
                           {/* Venue */}
-                          <div className="venue">Auditorium B</div>
+                          <div className="venue"> Le Dôme</div>
                         </div>
                       </li>
                       {/* Schedule Details */}
@@ -150,12 +151,12 @@ export default function Home(){
                           {/* Speaker */}
                           <div className="speaker">
                             <img src="templates/event/images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three"/>
-                          <span className="name">Henry Mong</span>
+                          <span className="name">Tayc</span>
                           </div>
                           {/* Subject */}
                           <div className="subject">Wp Requirements</div>
                           {/* Venue */}
-                          <div className="venue">Auditorium C</div>
+                          <div className="venue">Halle Tony Garnier C</div>
                         </div>
                       </li>
                       {/* Schedule Details */}
@@ -166,314 +167,19 @@ export default function Home(){
                             <i className="fa fa-clock-o"></i>
                             <span className="time">2.00 PM</span>
                           </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four"/>
-                          <span className="name">Baily Leo</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium D</div>
+                          
                         </div>
                       </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
+                    
                     </ul>
-                  </div>
-                  <div className="tab-pane fade schedule-item" id="nov21">
-                    {/* Headings */}
-                    <ul className="m-0 p-0">
-                      <li className="headings">
-                        <div className="time">Time</div>
-                        <div className="speaker">Speaker</div>
-                        <div className="subject">Subject</div>
-                        <div className="venue">Venue</div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">9.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one"/>
-                          <span className="name">Samanta Doe</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium A</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">10.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two"/>
-                          <span className="name">Zerad Pawel</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Principle of Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium B</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">12.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three"/>
-                          <span className="name">Henry Mong</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Wp Requirements</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium C</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">2.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four"/>
-                          <span className="name">Baily Leo</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium D</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="tab-pane fade schedule-item" id="nov22">
-                    {/* Headings */}
-                    <ul className="m-0 p-0">
-                      <li className="headings">
-                        <div className="time">Time</div>
-                        <div className="speaker">Speaker</div>
-                        <div className="subject">Subject</div>
-                        <div className="venue">Venue</div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">9.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one"/>
-                          <span className="name">Samanta Doe</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium A</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">10.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two"/>
-                          <span className="name">Zerad Pawel</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Principle of Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium B</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">12.00 AM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three"/>
-                          <span className="name">Henry Mong</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Wp Requirements</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium C</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">2.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four"/>
-                          <span className="name">Baily Leo</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Introduction to Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium D</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                      {/* Schedule Details */}
-                      <li className="schedule-details">
-                        <div className="block">
-                          {/* time */}
-                          <div className="time">
-                            <i className="fa fa-clock-o"></i>
-                            <span className="time">3.00 PM</span>
-                          </div>
-                          {/* Speaker */}
-                          <div className="speaker">
-                            <img src="templates/event/images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six"/>
-                          <span className="name">Lee Mun</span>
-                          </div>
-                          {/* Subject */}
-                          <div className="subject">Useful tips for Wp</div>
-                          {/* Venue */}
-                          <div className="venue">Auditorium E</div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                  </div>                
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </section>
+    
 
 
       <section className="ticket-feature">
@@ -482,12 +188,12 @@ export default function Home(){
             <div className="col-lg-7 p-0 m-0">
               <div className="block bg-timer overlay-dark text-center">
                 <div className="section-title white m-0">
-                  <h3>Limited Audience <span className="alternate">Seats</span></h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm</p>
-                </div>
-                {/*  */}
+                  <h3>Places Limitées ! <span className="alternate">Ne Manquez Pas Votre Chance</span></h3>
+                    <p>Les billets s'envolent vite. Réservez votre place pour une soirée inoubliable !</p>
+                 </div>
+               
                 <div className="timer"></div>
-                <a href="#" className="btn btn-main-md">Buy Ticket</a>
+                <a href="#" className="btn btn-main-md">Acheter votre Ticket</a>
               </div>
             </div>
             <div className="col-lg-5 p-0">
@@ -496,25 +202,25 @@ export default function Home(){
                   <div className="col-6">
                     <div className="service-item">
                       <i className="fa fa-microphone"></i>
-                      <h5>8 Speakers</h5>
+                      <h5>10 artistes</h5>
                     </div>
                   </div>
                   <div className="col-6">
                     <div className="service-item">
                       <i className="fa fa-flag"></i>
-                      <h5>500 + Seats</h5>
+                      <h5>1000+ places disponibles</h5>
                     </div>
                   </div>
                   <div className="col-6">
                     <div className="service-item">
                       <i className="fa fa-ticket"></i>
-                      <h5>300 tickets</h5>
+                      <h5>500+ tickets déjà vendus</h5>
                     </div>
                   </div>
                   <div className="col-6">
                     <div className="service-item">
                       <i className="fa fa-calendar"></i>
-                      <h5>3 days event</h5>
+                      <h5>5 concerts en tournée</h5>
                     </div>
                   </div>
                 </div>
@@ -524,24 +230,23 @@ export default function Home(){
         </div>
       </section>
 
-        
 
         <section className="map new">
           
           <div id="map"></div>
           <div className="address-block">
-            <h4>Docklands Convention</h4>
+            <h4>Localisations des concerts</h4> <br />
             <ul className="address-list p-0 m-0">
-              <li><i className="fa fa-home"></i><span>1201 Park Street, Fifth Avenue, <br/>Dhanmondy, Dhaka.</span></li>
-              <li><i className="fa fa-phone"></i><span>[88] 657 524 332</span></li>
+              <li><i className="fa fa-home"></i><span>Paris, Marseille, Lyon, Lille, Toulouse.</span></li>
+              <li><i className="fa fa-phone"></i><span>contact@ticketnow.fr / +33 6 12 34 56 78</span></li>
             </ul>
-            <a href="#" className="btn btn-white-md">Get Direction</a>
+            <a href="#" className="btn btn-white-md">Voir Direction</a>
           </div>
           <div className="register overlay-dark bg-registration-two">
             <div className="block">
               <div className="title text-center">
                 <h3>Register to <span className="alternate">Eventre</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <p>Eventre vous attend ! Inscrivez-vous pour vivre l'événement.</p>
               </div>
               <form action="#" className="row">
                 <div className="col-md-6">

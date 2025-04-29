@@ -12,7 +12,7 @@ export default function Contact(){
               </div>
               <ol className="breadcrumb p-0 m-0">
                 <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li className="breadcrumb-item active">Event Schedule</li>
+                <li className="breadcrumb-item active">Contact</li>
               </ol>
             </div>
           </div>
@@ -25,8 +25,8 @@ export default function Contact(){
           <div className="row">
             <div className="col-12">
               <div className="section-title">
-                <h3>Get in <span className="alternate">Touch</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, velit.</p>
+                <h3>Soyez parmi les premiers <span className="alternate">Inscrivez-vous</span></h3>
+                <p>Inscrivez-vous à Eventre et ne manquez rien.</p>
               </div>
             </div>
           </div>
@@ -58,12 +58,12 @@ export default function Contact(){
         {/* Google Map  */}
         <div id="map"></div>
         <div className="address-block">
-          <h4>Docklands Convention</h4>
-          <ul className="address-list p-0 m-0">
-            <li><i className="fa fa-home"></i><span>1201 Park Street, Fifth Avenue, <br/>Dhanmondy, Dhaka.</span></li>
-            <li><i className="fa fa-phone"></i><span>[88] 657 524 332</span></li>
-          </ul>
-          <a href="#" className="btn btn-white-md">Get Direction</a>
+          <h4>Localisations des concerts</h4> <br />
+            <ul className="address-list p-0 m-0">
+              <li><i className="fa fa-home"></i><span>Paris, Marseille, Lyon, Lille, Toulouse.</span></li>
+              <li><i className="fa fa-phone"></i><span>contact@ticketnow.fr / +33 6 12 34 56 78</span></li>
+            </ul>
+          <a href="#" className="btn btn-white-md">Voir Direction</a>
         </div>
       </section>
 
