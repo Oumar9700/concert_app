@@ -15,7 +15,7 @@ export default function AsideOrganizer() {
           <img src="templates/adminlte/dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image"/>
         </div>
         <div className="info">
-          <a href="#" className="d-block">Organizer Dashboard</a>
+          <a href="#" className="d-block">Organisateur</a>
         </div>
       </div>
 
@@ -24,6 +24,14 @@ export default function AsideOrganizer() {
           {/* <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library --> */}
           
+          <li className="nav-item">
+            <a href="homeOrganizer" className="nav-link">
+              <i className="nav-icon fas fa-th"></i>
+              <p>
+                Tableau de bord
+              </p>
+            </a>
+          </li>
           <li className="nav-item">
             <a href="createEvent" className="nav-link">
               <i className="nav-icon fas fa-th"></i>

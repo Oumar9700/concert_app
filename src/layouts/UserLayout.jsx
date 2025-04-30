@@ -7,33 +7,7 @@ import { Outlet } from 'react-router-dom';
 
 const UserLayout = ({ children }) => {
   return (
-    <>
-      <AssetsLoader
-        styles={[
-          '/templates/event/plugins/bootstrap/css/bootstrap.min.css',
-          '/templates/event/plugins/themefisher-font/style.css',
-          '/templates/event/plugins/font-awsome/css/font-awesome.min.css',
-          '/templates/event/plugins/magnific-popup/magnific-popup.css',
-          '/templates/event/plugins/slick/slick.css',
-          '/templates/event/plugins/slick/slick-theme.css',
-          '/templates/event/css/style.css',
-        ]}
-        scripts={[
-          '/templates/event/plugins/jquery/jquery.js',
-          '/templates/event/plugins/popper/popper.min.js',
-          '/templates/event/plugins/bootstrap/js/bootstrap.min.js',
-          '/templates/event/plugins/smoothscroll/SmoothScroll.min.js',
-          '/templates/event/plugins/isotope/mixitup.min.js',
-          '/templates/event/plugins/magnific-popup/jquery.magnific-popup.min.js',
-          '/templates/event/plugins/slick/slick.min.js',
-          '/templates/event/plugins/syotimer/jquery.syotimer.min.js',
-          // 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw',
-          // '/templates/event/plugins/google-map/gmap.js',
-          '/templates/event/js/custom.js',
-        ]}
-      />
-      
-      {/* Ici ton layout HTML de base */}
+   
       <div className="body-wrapper">
 
         <nav className="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
@@ -132,8 +106,6 @@ const UserLayout = ({ children }) => {
 
 
       </div>
-      
-    </>
   );
 };
 
