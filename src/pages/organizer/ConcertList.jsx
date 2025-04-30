@@ -193,12 +193,12 @@ const ConcertList = () => {
                                   <h5 className="card-title text-primary">{price.type.toUpperCase()}</h5>
                                   <p className="card-text">{price.description}</p>
                                   <p><strong>{price.price} €</strong></p>
-                                  <button
+                                  {/* <button
                                     className="btn btn-success btn-sm"
                                     onClick={() => setSelectedPrice(price)}
                                   >
                                     Prendre un ticket
-                                  </button>
+                                  </button> */}
                                 </div>
                               </div>
                             </div>

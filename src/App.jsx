@@ -17,6 +17,7 @@ import OrganizerDashboard from './pages/organizer/OrganizerDashboard';
 import OrganizerLayout from './layouts/OrganizerLayout';
 import CreateConcertForm from './pages/organizer/CreateConcert';
 import ConcertList from './pages/organizer/ConcertList';
+import ConcertUserList from './pages/site/ConcertUserList';
 
 
 export default function App() {
@@ -29,7 +30,7 @@ export default function App() {
 
           <Route path='/'  element={<UserLayout />}>
             <Route index element={<Home />} />
-            <Route path='events' element={<Events />} />
+            <Route path='events' element={<ConcertUserList />} />
             <Route path='contacts' element={<Contact />} />
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />

@@ -7,7 +7,7 @@ import axios from 'axios';
 import jsPDF from "jspdf";
 
 
-const ConcertList = () => {
+const ConcertUserList = () => {
   const [concerts, setConcerts] = useState([]);
   const [selectedConcert, setSelectedConcert] = useState(null);
 
@@ -93,42 +93,51 @@ const ConcertList = () => {
 
   return (
 
-    <div className="content-wrapper">
-        {/* Content Header (Page header) */}
-        <div className="content-header">
-          <div className="container-fluid">
-            <div className="row mb-2">
-              <div className="col-sm-6">
-                <h1 className="m-0">Organizer Dashboard</h1>
-              </div>{/* /.col */}
-              <div className="col-sm-6">
-                <ol className="breadcrumb float-sm-right">
-                  <li className="breadcrumb-item"><a href="#">Home</a></li>
-                  <li className="breadcrumb-item active">Dashboard v1</li>
-                </ol>
-              </div>{/* /.col */}
-            </div>{/* /.row */}
-          </div>{/* /.container-fluid */}
+    <>
+
+    <section className="page-title bg-title overlay-dark">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <div className="title">
+                <h3>Concerts avenir</h3>
+              </div>
+              <ol className="breadcrumb p-0 m-0">
+                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li className="breadcrumb-item active">Evenements</li>
+              </ol>
+            </div>
+          </div>
         </div>
-        {/* /.content-header */}
+      </section>
 
-        {/* Main content */}
+        
+      <section className="section schedule ">
+        <div className="container">
+          <div className="row ">
+            <div className="col-12">
+              <div className="section-title">
+                <h3>Concerts <span className="alternate">à venir</span></h3>
+                <p>Des concerts dans toute la France, des artistes locaux aux stars internationales</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="container-fluid bg-schedule">
 
-        <section className="content">
-          <div className="container-fluid">
-
-            <div className="card">
+            <div className="card ">
               <div className="card-header">
                 <h3 className="card-title">Liste des concerts</h3>
               </div>
               <div className="card-body">
                 <table id="concertTable" className="table table-bordered table-striped">
                   <thead>
-                    <tr>
+                    <tr className='headings'>
                       <th>Titre</th>
                       <th>Ville</th>
                       <th>Pays</th>
                       <th>Date</th>
+                      <th>Nbre places</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -139,6 +148,7 @@ const ConcertList = () => {
                         <td>{concert.city}</td>
                         <td>{concert.country}</td>
                         <td>{new Date(concert.beginDate).toLocaleDateString()}</td>
+                        <td>{concert.capacity}</td>
                         <td>
                           <button
                             className="btn btn-primary btn-sm"
@@ -261,7 +271,7 @@ const ConcertList = () => {
                                             priceId: selectedPrice.id
                                           });
                                       
-                                          alert("🎉 Réservation réussie !");
+                                          alert("🎉 Réservation réussie ! le téléchargement de votre ticket se lancera après fermeture de cette fenetre .");
                                           generateTicketPDF();
 
                                           setSelectedPrice(null);
@@ -295,13 +305,13 @@ const ConcertList = () => {
             </div>
 
           </div>
-        </section>
-        
-        {/* /.content */} 
-      </div>
 
+        </div>
+      </section>
+
+    </>
       
   );
 };
 
-export default ConcertList;
+export default ConcertUserList;
