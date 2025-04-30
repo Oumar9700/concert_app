@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Aside() {
+export default function AsideOrganizer() {
 
   return (
     <aside className="main-sidebar sidebar-dark-primary elevation-4">
     <a href="index3.html" className="brand-link">
       <img src="templates/adminlte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: .8}} />
-      <span className="brand-text font-weight-light">AdminLTE 3</span>
+      <span className="brand-text font-weight-light">Eventre</span>
     </a>
 
     <div className="sidebar">
@@ -15,7 +15,7 @@ export default function Aside() {
           <img src="templates/adminlte/dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image"/>
         </div>
         <div className="info">
-          <a href="#" className="d-block">Alexander Pierce</a>
+          <a href="#" className="d-block">Organizer Dashboard</a>
         </div>
       </div>
 
@@ -23,31 +23,30 @@ export default function Aside() {
         <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           {/* <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library --> */}
+          
           <li className="nav-item">
-            <a href="pages/widgets.html" className="nav-link">
+            <a href="createEvent" className="nav-link">
               <i className="nav-icon fas fa-th"></i>
               <p>
-                Tableau de bord
+                Nouveau concert
               </p>
             </a>
           </li>
-          <li className="nav-item menu-open">
-            <a href="#" className="nav-link active">
-              <i className="nav-icon fas fa-tachometer-alt"></i>
+          <li className="nav-item">
+            <a href="/concertList" className="nav-link">
+              <i className="nav-icon fas fa-th"></i>
               <p>
-                Evenements
-                <i className="right fas fa-angle-left"></i>
+                Mes concerts
               </p>
             </a>
-            <ul className="nav nav-treeview">
-              <li className="nav-item">
-                <a href="./index.html" className="nav-link active">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Liste </p>
-                </a>
-              </li>
-              
-            </ul>
+          </li>
+          <li className="nav-item">
+            <a href="/login" className="nav-link">
+              <i className="nav-icon fas fa-th"></i>
+              <p>
+                Déconnexion
+              </p>
+            </a>
           </li>
           
         </ul>

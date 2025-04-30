@@ -14,8 +14,17 @@ const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    
     if (user) {
-      console.log("Nouvel utilisateur connecté :", user);
+      console.log("Utilisateur connecté :", user);
+      if(user.role === "client") {
+        navigate("/client/home");
+      } else if(user.role === "admin") {
+        navigate("/homeAdmin");
+      } else if(user.role === "organizer") {
+        console.log("redirect to orgi")
+        navigate("/homeOrganizer");
+      }
     }
   }, [user]);
 
@@ -58,7 +67,7 @@ const AuthProvider = ({ children }) => {
         navigate("/login");
         return;
       }
-      setErrorLogin(res.error);
+      setErrorLogin(res.message);
       throw new Error(res.message);
     } catch (err) {
       console.error(err);
@@ -77,26 +86,22 @@ const AuthProvider = ({ children }) => {
       const res = await response.json();
       
       if (res.data) {
-        console.log(res.data.user);
 
-        
+        console.log("user logged data :");
+        console.log(res.data);
 
-        setUser(  res.data.user);
-        console.log("dddd : user : ")
-        console.log(user)
-        setToken(res.data.token);
-        setRefreshToken(res.data.refreshToken);
-        localStorage.setItem("token", res.data.token);
-        localStorage.setItem("refreshToken", res.data.refreshToken);
+        setUser(res.data);
+        setToken(res.data.id)
+        setRefreshToken(res.data.id)
+        localStorage.setItem("token", res.data.id);
+        localStorage.setItem("refreshToken", res.data.id);
 
-        console.log("localStorage", localStorage.getItem("token"));
-        console.log("navigating to dashboard");
 
         setErrorLogin(null);
-        navigate("/dashboard");
+
         return;
       }
-      setErrorLogin(res.error);
+      setErrorLogin(res.message);
       throw new Error(res.message);
     } catch (err) {
       console.error(err);

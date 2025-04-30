@@ -1,5 +1,5 @@
-// src/pages/admin/AdminDashboard.jsx
-export default function AdminDashboard() {
+// src/pages/admin/OrganizerDashboard.jsx
+export default function OrganizerDashboard() {
     return (
       
       <div className="content-wrapper">
@@ -8,7 +8,7 @@ export default function AdminDashboard() {
           <div className="container-fluid">
             <div className="row mb-2">
               <div className="col-sm-6">
-                <h1 className="m-0">Admin Dashboard</h1>
+                <h1 className="m-0">Organizer Dashboard</h1>
               </div>{/* /.col */}
               <div className="col-sm-6">
                 <ol className="breadcrumb float-sm-right">
