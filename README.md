@@ -18,3 +18,6 @@
 5. La branche par défaut est main et contient la version finale. si il y a probleme, la branche oumar est la plus a jour
 
 
+## NOTE 
+Une vidéo de démo est disponible sur le repo : 
+
