@@ -4,12 +4,20 @@ import Aside from './admin/AsideOrganizer';
 import Footer from './admin/Footer';
 import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '../hooks/AuthProvider';
+import AsideOrganizer from './admin/AsideOrganizer';
 
-const AdminLayout = ({ children }) => {
+const OrganizerLayout = ({ children }) => {
 
   const user = useAuth();
-  if (!user.user.id || user.user.role != "admin") return <Navigate to="/login" />; 
-
+  console.log("le user recup :", user);
+  // // if (!user.id || user.role != "organizer") return <Navigate to="/login" />; 
+  // if (user.user === null) {
+  //   return <Navigate to="/login" />; // ou un spinner sympa
+  // }
+  
+  // if (!user.user.id || user.user.role !== "organizer") {
+  //   return <Navigate to="/login" />;
+  // }
   return (
     <>
       <AssetsLoader
@@ -85,13 +93,11 @@ const AdminLayout = ({ children }) => {
                 
         ]}
       />
-
-      {/* Ton layout HTML admin ici */}
     
       <>
           {/* navbar, sidebar, etc. */}
           <Header />
-          <Aside />
+          <AsideOrganizer />
           {/* <Dashboard /> */}
           <Outlet />
           <Footer />
@@ -101,4 +107,4 @@ const AdminLayout = ({ children }) => {
   );
 };
 
-export default AdminLayout;
+export default OrganizerLayout;

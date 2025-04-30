@@ -13,21 +13,19 @@ import Contact from './pages/site/Contact';
 import Login from './pages/site/Login';
 import Register from './pages/site/Register';
 import AuthProvider from './hooks/AuthProvider';
+import OrganizerDashboard from './pages/organizer/OrganizerDashboard';
+import OrganizerLayout from './layouts/OrganizerLayout';
+import CreateConcertForm from './pages/organizer/CreateConcert';
+import ConcertList from './pages/organizer/ConcertList';
 
 
 export default function App() {
   return (
-    <BrowserRouter>
+    
 
       <AuthProvider>
 
         <Routes>
-          
-
-          {/* Routes pour les users */}
-          {/* <Route path="/" element={<UserLayout />}>
-            <Route index element={<h1>User home page</h1>} />
-          </Route> */}
 
           <Route path='/'  element={<UserLayout />}>
             <Route index element={<Home />} />
@@ -37,15 +35,21 @@ export default function App() {
             <Route path='register' element={<Register />} />
           </Route>
 
+
           {/* Routes pour les admins */}
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<AdminDashboard />} />
+          <Route element={<AdminLayout />}>
+            <Route path='/homeAdmin' element={<AdminDashboard />} />
+          </Route>
+
+          <Route element={<OrganizerLayout />}>
+            <Route path='/homeOrganizer' element={<OrganizerDashboard />} />
+            <Route path='/createEvent' element={<CreateConcertForm />} />
+            <Route path='/concertList' element={<ConcertList />} />
           </Route>
           
         </Routes>
         
       </AuthProvider>
-    </BrowserRouter>
   );
 }
 
